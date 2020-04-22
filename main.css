@@ -20,6 +20,22 @@
     position: fixed;
    
   }
+
+  .hero {
+    background-color: red;
+  }
+
+  .aboutme {
+    background-color: green;
+  }
+
+  .projects {
+    background-color: blue;
+  }
+
+  .contactinfo {
+    background-color:yellow;
+  }
   
   
   
@@ -32,7 +48,64 @@
     background-color: #bbb;
   }
   
-  section:nth-child(even) {
-    background-color: #ddd;
+
+  @media screen and (min-width: 700px){
+
+    .hero {
+      height: 500px;
+    }
+
+    .aboutme {
+      height: 500px;
+    }
+
+    .projects {
+      height: 500px;
+    }
+
+    .contactinfo {
+      height: 500px;
+    }
+
+  } 
+
+  @media screen and (min-width: 1200px){
+
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .columnOne {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .columnTwo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      height: 350px;
+      width: 600px;
+    }
+
+    .aboutme {
+      height: 350px;
+      width: 600px;
+    }
+
+    .projects {
+      height: 350px;
+      width: 600px;
+    }
+
+    .contactinfo {
+      height: 350px;
+      width: 600px;
+    }
+
   }
   
