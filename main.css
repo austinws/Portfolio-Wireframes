@@ -10,31 +10,49 @@
 
   }
   
-  nav,
+  /*nav {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 9px;
+    border-color: black;
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+    z-index: 10;
+   
+  }*/
+
+  nav {
+    background-color: dimgrey;
+    border-radius: 9px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+
   footer {
 
     background-color: #aaa;
   }
-  
-  nav {
-    position: fixed;
-   
-  }
+
 
   .hero {
-    background-color: red;
+    background-color: rgb(230, 230, 230)
   }
 
   .aboutme {
-    background-color: green;
+    background-color: rgb(197, 197, 197);
   }
 
   .projects {
-    background-color: blue;
+    background-color:rgb(59, 59, 59);
   }
 
   .contactinfo {
-    background-color:yellow;
+    background-color:rgb(119, 119, 119);
   }
   
   
@@ -46,6 +64,17 @@
   section {
     min-height: 200px;
     background-color: #bbb;
+  }
+
+  h3 {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 9px;
+    width: auto;
+
   }
   
 
@@ -77,6 +106,10 @@
       justify-content: center;
     }
 
+    h3 {
+      margin: 10px;
+    }
+
     .columnOne {
       display: flex;
       flex-direction: column;
@@ -105,6 +138,24 @@
     .contactinfo {
       height: 350px;
       width: 600px;
+    }
+ 
+    .projectsDiv {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      justify-content: space-evenly;
+      margin: 10px;
+      
+    }
+
+    .contactDiv {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      justify-content: space-evenly;
+      margin: 10px;
+      
     }
 
   }
